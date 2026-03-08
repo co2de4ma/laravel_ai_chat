@@ -1,0 +1,16 @@
+{
+  "install": "bash .cursor/install.sh",
+  "start": "bash .cursor/start.sh",
+  "terminals": [
+    {
+      "name": "laravel-dev-server",
+      "command": "composer run dev:server",
+      "ports": [8000]
+    },
+    {
+      "name": "vite-dev-server",
+      "command": "composer run dev:vite",
+      "ports": [5173]
+    }
+  ]
+}
