@@ -1,0 +1,11 @@
+{
+  "install": "bash .cursor/install.sh",
+  "start": "bash .cursor/start.sh",
+  "terminals": [
+    {
+      "name": "laravel-dev",
+      "command": "composer dev",
+      "ports": [8000, 5173]
+    }
+  ]
+}
