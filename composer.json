@@ -41,15 +41,19 @@
             "npm run build"
         ],
         "dev:server": [
+            "Composer\\Config::disableProcessTimeout",
             "@php artisan serve --host=0.0.0.0 --port=8000"
         ],
         "dev:queue": [
+            "Composer\\Config::disableProcessTimeout",
             "@php artisan queue:listen --tries=1 --timeout=0"
         ],
         "dev:logs": [
+            "Composer\\Config::disableProcessTimeout",
             "@php artisan pail --timeout=0"
         ],
         "dev:vite": [
+            "Composer\\Config::disableProcessTimeout",
             "npm run dev"
         ],
         "dev": [
