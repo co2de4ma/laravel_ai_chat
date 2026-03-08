@@ -1,6 +1,6 @@
 {
-  "install": "bash .cursor/install.sh",
-  "start": "bash .cursor/start.sh",
+  "snapshot": "snapshot-20260308-33c1b80a-3f79-4537-8fde-f992e6002540",
+  "install": "bash .cursor/update.sh",
   "terminals": [
     {
       "name": "laravel-dev",
