@@ -1,0 +1,3 @@
+{
+  "install": "composer install --no-interaction\nnpm install\nphp -r \"file_exists('.env') || copy('.env.example', '.env');\"\nphp -r \"if (file_exists('.env') && !preg_match('/^APP_KEY=.+/m', file_get_contents('.env'))) { passthru('php artisan key:generate'); }\"\nphp -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"\nphp artisan migrate --force"
+}
